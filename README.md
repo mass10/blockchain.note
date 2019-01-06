@@ -31,6 +31,13 @@ geth --networkid "15" --nodiscover --datadir "/home/${USER}/eth_private_net" con
 geth attach geth.ipc
 ```
 
+# アカウントを作成する
+
+```
+geth attach geth.ipc
+> personal.newAccount("password")
+```
+
 # web3.js
 
 * Geth とやりとりを行うための JavaScript library
