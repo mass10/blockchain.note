@@ -6,7 +6,7 @@
 ### installation
 
 ```
-sudo add-apt-repository -y ppa:ethereum/ethereum
+sudo add-apt-repository ppa:ethereum/ethereum
 sudo apt-get update
 sudo apt-get install ethereum
 ```
@@ -21,6 +21,14 @@ geth --datadir /home/${USER}/eth_private_net init /home/${USER}/eth_private_net/
 
 ```
 geth --networkid "15" --nodiscover --datadir "/home/${USER}/eth_private_net" console 2>> /home/${USER}/eth_private_net/geth_err.log
+```
+
+# attach geth
+
+(※datadir で)
+
+```
+geth attach geth.ipc
 ```
 
 # web3.js
