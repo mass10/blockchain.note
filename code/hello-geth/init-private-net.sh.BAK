@@ -1,0 +1,2 @@
+#!/bin/bash
+geth --datadir /home/${USER}/eth_private_net init /home/${USER}/eth_private_net/myGenesis.json
