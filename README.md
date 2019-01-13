@@ -11,11 +11,53 @@ sudo apt-get update
 sudo apt-get install bitcoind
 ```
 
-# starting node
+# setting bitcoind
+
+設定ファイル: `/etc/bitcoin/bitcoin.conf`
+
+```
+server=1
+mainnet=1
+txindex=1
+rest=1
+```
+
+# starting bitcoind
 
 ```bash
 # by normal user
 bitcoind -daemon
+```
+
+# stopping bitcoind
+
+```bash
+bitcoin-cli stop
+```
+
+# ブロックチェーン情報を表示する
+
+```bash
+bitcoin-cli -getinfo
+```
+```
+{
+  "version": 170000,
+  "protocolversion": 70015,
+  "walletversion": 169900,
+  "balance": 0.00000000,
+  "blocks": 558326,
+  "timeoffset": -4,
+  "connections": 8,
+  "proxy": "",
+  "difficulty": 5618595848853.279,
+  "testnet": false,
+  "keypoololdest": 1546787972,
+  "keypoolsize": 1000,
+  "paytxfee": 0.00000000,
+  "relayfee": 0.00001000,
+  "warnings": ""
+}
 ```
 
 # getting started with geth on Ubuntu 18 (2018-12-31)
