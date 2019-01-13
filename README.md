@@ -1,3 +1,23 @@
+# Bitcoin Core
+- オフィシャルクライアントソフトウェア
+- C++
+
+# Installing bitcoin core on Ubuntu
+
+```bash
+sudo apt-add-repository ppa:bitcoin/bitcoin
+sudo apt-get update
+sudo apt-get install bitcoind
+```
+
+# starting node
+
+```bash
+# by normal user
+bitcoind -daemon
+```
+
+
 # getting started with geth on Ubuntu 18 (2018-12-31)
 
 ### go-ethereum
@@ -5,7 +25,7 @@
 
 ### installation
 
-```
+```bash
 sudo add-apt-repository ppa:ethereum/ethereum
 sudo apt-get update
 sudo apt-get install ethereum
@@ -13,13 +33,13 @@ sudo apt-get install ethereum
 
 # initializing geth genesis block
 
-```
+```bash
 geth --datadir /home/${USER}/eth_private_net init /home/${USER}/eth_private_net/myGenesis.json
 ```
 
 # running geth
 
-```
+```bash
 geth --networkid "15" --nodiscover --datadir "/home/${USER}/eth_private_net" console 2>> /home/${USER}/eth_private_net/geth_err.log
 ```
 
@@ -27,13 +47,13 @@ geth --networkid "15" --nodiscover --datadir "/home/${USER}/eth_private_net" con
 
 (※datadir で)
 
-```
+```bash
 geth attach geth.ipc
 ```
 
 # アカウントを作成する
 
-```
+```bash
 geth attach geth.ipc
 > personal.newAccount("password")
 ```
