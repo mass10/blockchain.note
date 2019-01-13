@@ -1,6 +1,6 @@
 # Bitcoin Core
 
-- オフィシャルクライアントソフトウェア
+- オフィシャルな参照実装
 - C++
 
 # Installing bitcoin core on Ubuntu
