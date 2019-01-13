@@ -45,9 +45,8 @@ geth --networkid "15" --nodiscover --datadir "/home/${USER}/eth_private_net" con
 
 # attach geth
 
-(※datadir で)
-
 ```bash
+cd "/home/${USER}/eth_private_net"
 geth attach geth.ipc
 ```
 
