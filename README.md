@@ -55,6 +55,8 @@ geth attach geth.ipc
 
 ```bash
 geth attach geth.ipc
+```
+```geth
 > personal.newAccount("password")
 ```
 
