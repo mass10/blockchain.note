@@ -3,7 +3,7 @@
 - オフィシャルな参照実装
 - C++
 
-# Installing bitcoin core on Ubuntu
+# Installing bitcoin core on Ubuntu 18
 
 ```bash
 sudo apt-add-repository ppa:bitcoin/bitcoin
